@@ -198,7 +198,6 @@ DEFAULT_ROW = {
     "Sports": "No", "Music": "Yes", "Volunteering": "No"
 }
 
-<br>
-
 to test on custom data
+
 ---
