@@ -12,7 +12,7 @@ A compact, end‑to‑end machine‑learning project that trains a classifier to
 * **Simple REST API**: `/health`, `/` and `/predict` with JSON input; returns predictions (and probabilities when supported).
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 MLPROJECT1/
@@ -42,7 +42,7 @@ MLPROJECT1/
 
 ---
 
-## 🧠 Problem & Data
+## Problem & Data
 
 The goal is to predict **`GradeClass`** ∈ {0,1,2,3,4}. Typical features used (as wired in the transformer):
 
@@ -57,7 +57,7 @@ Class distribution example (train): 4.0≈55%, 3.0≈19%, 2.0≈18%, 1.0≈12%, 
 
 ---
 
-## 🛠️ Setup
+## Setup
 
 ### 1) Create & activate a virtual environment
 
@@ -136,7 +136,7 @@ print(r["test_metrics"])              # accuracy & f1_macro on held‑out test
 
 ---
 
-## 🚀 Local Inference (Flask API)
+## Local Inference (Flask API)
 
 Start the dev server:
 
@@ -181,7 +181,7 @@ Invoke-RestMethod http://127.0.0.1:8080/predict -Method POST -ContentType "appli
 * Unknown categories are safely ignored (`OneHotEncoder(handle_unknown="ignore")`).
 * The endpoint accepts **one object** or a list of objects, or `{ "instances": [...] }`.
 
-### Python client snippet
+### Python snippet for quick test
 
 ```python
 python quick_test.py --offline
